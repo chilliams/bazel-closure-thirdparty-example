@@ -1,5 +1,8 @@
 module.exports = (env, argv) => ({
   mode: argv.mode,
+  output: {
+    filename: argv.name,
+  },
   module: {
     rules: [
       {
@@ -9,8 +12,15 @@ module.exports = (env, argv) => ({
       },
     ],
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+          filename: 'vendor.[contenthash].js',
+          chunks: 'all',
+        },
+      },
+    },
   },
 });

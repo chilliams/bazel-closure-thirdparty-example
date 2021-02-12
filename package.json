@@ -1,8 +1,8 @@
 {
   "devDependencies": {
     "http-server": "^0.12.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack": "5.19.0",
+    "webpack-cli": "4.4.0"
   },
   "dependencies": {
     "ace-builds": "^1.4.12",
