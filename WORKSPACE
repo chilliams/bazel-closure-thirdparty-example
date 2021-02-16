@@ -16,7 +16,9 @@ http_archive(
 )
 
 load("@io_bazel_rules_closure//closure:repositories.bzl", "rules_closure_dependencies", "rules_closure_toolchains")
+
 rules_closure_dependencies()
+
 rules_closure_toolchains()
 
 http_archive(
@@ -31,4 +33,10 @@ yarn_install(
     name = "npm",
     package_json = "//:package.json",
     yarn_lock = "//:yarn.lock",
+)
+
+yarn_install(
+    name = "npm2",
+    package_json = "//upgrade:package.json",
+    yarn_lock = "//upgrade:yarn.lock",
 )

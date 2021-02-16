@@ -16,8 +16,9 @@ closure_js_library(
 )
 
 custom_js_binary(
-    name = "app2",
-    entry_points = ["/src/app2/main"],
+    name = "app3",
+    entry_points = ["/src/app3/main"],
+    upgrade = True,
     visibility = [
         "//visibility:public",
     ],

@@ -13,3 +13,4 @@ https://clojurescript.org/news/2020-04-24-bundle-target
 - Navigate to http://localhost:8080/
 - Navigate to http://localhost:8080/samevendortag
 - Navigate to http://localhost:8080/singlevendortag
+- Navigate to http://localhost:8080/multipleversions

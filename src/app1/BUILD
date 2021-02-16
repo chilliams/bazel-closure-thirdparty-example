@@ -12,6 +12,7 @@ closure_js_library(
     ],
     deps = [
         "//externs",
+        "//src/lib",
         "@io_bazel_rules_closure//closure/library/string",
     ],
 )

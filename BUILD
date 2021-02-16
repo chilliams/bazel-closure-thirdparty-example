@@ -1,15 +1,15 @@
 load("@npm//http-server:index.bzl", "http_server")
 
-exports_files(["webpack.config.js"])
-
 http_server(
     name = "server",
     data = [
         "index.html",
+        "multipleversions.html",
         "samevendortag.html",
         "singlevendortag.html",
         "//src/app1",
         "//src/app2",
+        "//src/app3",
     ],
     templated_args = ["."],
 )
