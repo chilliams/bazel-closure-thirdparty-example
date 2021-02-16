@@ -6,9 +6,9 @@ const ReactDOM = require('react-dom');
 ReactDOM.render(
   React.createElement(
     'h1', null,
-    `App 2 with React ${React['version']}`,
+    `App 3 with React ${React['version']}`,
     React.createElement(Button, null),
   ),
-  document.getElementById('app2-root'));
+  document.getElementById('app3-root'));
 
 export {};
